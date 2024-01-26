@@ -2010,42 +2010,6 @@ video {
   background-color: rgb(253 186 116 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('../assets/media/hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\.\.assets\/media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('..assets/media/hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\.\.\\assets\/media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('..\assets/media/hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\.\.\\assets\\media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('..\assets\media/hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\.\.\\assets\\media\\hands-and-coffee\.jpg\'\)\] {
-  background-image: url('..\assets\media\hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\/\.\.\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('/../assets/media/hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('../../assets/media/hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\.\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('.././assets/media/hands-and-coffee.jpg');
-}
-
-.bg-\[url\(\'\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
-  background-image: url('/assets/media/hands-and-coffee.jpg');
-}
-
 .bg-\[url\(\'assets\/media\/hands-and-coffee\.jpg\'\)\] {
   background-image: url('assets/media/hands-and-coffee.jpg');
 }
