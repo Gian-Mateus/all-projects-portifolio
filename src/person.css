@@ -2,11 +2,8 @@
     box-sizing: content-box;
 }
 .zigzagBorder {
-    /* background-image: url('../assets/media/hands-and-coffee.jpg'); */
     mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/80px 90.3vh;
 
     -webkit-mask:
     conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/80px 90.3vh;
 }
-
-/* bg-[url('assets/media/hands-and-coffee.jpg')] */
