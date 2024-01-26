@@ -2014,8 +2014,32 @@ video {
   background-image: url('../assets/media/hands-and-coffee.jpg');
 }
 
+.bg-\[url\(\'\.\.assets\/media\/hands-and-coffee\.jpg\'\)\] {
+  background-image: url('..assets/media/hands-and-coffee.jpg');
+}
+
+.bg-\[url\(\'\.\.\\assets\/media\/hands-and-coffee\.jpg\'\)\] {
+  background-image: url('..\assets/media/hands-and-coffee.jpg');
+}
+
+.bg-\[url\(\'\.\.\\assets\\media\/hands-and-coffee\.jpg\'\)\] {
+  background-image: url('..\assets\media/hands-and-coffee.jpg');
+}
+
+.bg-\[url\(\'\.\.\\assets\\media\\hands-and-coffee\.jpg\'\)\] {
+  background-image: url('..\assets\media\hands-and-coffee.jpg');
+}
+
 .bg-\[url\(\'\/\.\.\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
   background-image: url('/../assets/media/hands-and-coffee.jpg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
+  background-image: url('../../assets/media/hands-and-coffee.jpg');
+}
+
+.bg-\[url\(\'\.\.\/\.\/assets\/media\/hands-and-coffee\.jpg\'\)\] {
+  background-image: url('.././assets/media/hands-and-coffee.jpg');
 }
 
 .decoration-slice {
