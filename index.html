@@ -8,8 +8,8 @@
     <title>Café's Pah</title>
 </head>
 <body>
-    <header  class="flex flex-row items-center md:justify-center md:px-[20%] py-5 bg-lime-900 text-white font-bold relative">
-        <button class="md:hidden w-5 min-w-[30px] absolute right-6">
+    <header class="flex flex-row items-center md:justify-center md:px-[20%] py-5 bg-lime-900 text-white font-bold relative">
+        <button class="md:hidden w-5 min-w-[30px] absolute right-6" data-toggle="menu" data-target="menuNav">
             <svg class="fill-white" viewBox="4.059 6.234 55.0165 50.7467" xmlns="http://www.w3.org/2000/svg">
     <g transform="matrix(1, 0, 0, 1, 0, -8.881784197001252e-16)">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M47.26,17.514c-1.958,0.032-4.815,1.012-7.2,1.68    c-1.103,0.309-3.098-0.023-3.12,1.68c1.383,1.557,3.837,0.676,5.04,0.48c0.001,0.241-0.194,0.286-0.24,0.48    c1.101-0.131,1.119,0.049,1.681-0.72c0.104,0.85,2.2-0.102,2.399-0.72c1.4,0.556,6.592-1.375,7.92-2.16    c0.263-1.302-0.571-1.509-0.72-2.4C50.261,15.808,48.536,16.647,47.26,17.514z"/>
@@ -32,14 +32,15 @@
             <img src="assets/logo-coffee-lime.svg" alt="" class="w-5 min-w-[30px]">
             <h1 class="hidden md:block">Café's Pah</h1>
         </span>
-        <nav class="bg-lime-900 fixed md:relative right-0 top-0 h-screen md:h-auto z-[1] rounded-l-xl px-6 md:p-0 flex items-center shadow-2xl border-l-2 border-lime-800 ">
-            <ul class="flex flex-col md:flex-row md:gap-10 font-semibold gap-y-3.5 ">
+        <nav id="menuNav" class="hidden md:flex md:m-0 bg-lime-900 md:static fixed right-0 top-1/2 -mt-[45vh] h-[90vh] md:h-full z-20 md:rounded-none md:border-none rounded-l-full px-6 md:p-0 items-center shadow-2xl border-l-4 border-lime-800 animate-scale-r-to-l md:animate-none">
+            <ul class="flex flex-col md:flex-row md:gap-10 font-semibold gap-y-10 justify-center">
                 <li><a href="">Home</a></li>
                 <li><a href="">Sobre nós</a></li>
                 <li><a href="">Cardápio</a></li>
                 <li><a href="">Fale conosco</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
 
@@ -67,10 +68,10 @@
             </div>
         </section>
 
-        <section class="min-h-screen flex flex-row justify-center items-center w-3/4 mx-auto my-14 gap-4 text-white">
+        <section class="min-h-screen flex flex-col md:flex-row gap-y-20 md:gap-y-0 justify-center items-center w-3/4 mx-auto my-14 md:gap-4 text-white">
             <div class="bg-orange-300 rounded-xl relative border-4 border-orange-200 shadow-inner">
-                <div class="absolute -top-[15%] -translate-x-1/2 left-1/2 rounded-full overflow-hidden">
-                    <img src="assets/media/Rectangle 174.png" alt="">
+                <div class="absolute -top-[20%] flex justify-center overflow-hidden w-full">
+                    <img class="rounded-full" src="assets/media/Rectangle 174.png" alt="">
                 </div>
                 <div class="text-center p-5 mt-12 flex flex-col gap-6">
                     <h3 class="font-bold text-3xl">Cappucinos</h3>
@@ -83,8 +84,8 @@
                 </div>
             </div>
             <div class="bg-lime-900 rounded-xl relative border-4 border-lime-700 shadow-inner">
-                <div class="absolute -top-[15%] -translate-x-1/2 left-1/2">
-                    <img src="assets/media/Rectangle 174 (1).png" alt="">
+                <div class="absolute -top-[20%] flex justify-center overflow-hidden w-full">
+                    <img class="rounded-full" src="assets/media/Rectangle 174 (1).png" alt="">
                 </div>
                 <div class="text-center p-5 mt-12 flex flex-col gap-6">
                     <h3 class="font-bold text-3xl">Cafés</h3>
@@ -97,8 +98,8 @@
                 </div>
             </div>
             <div class="bg-amber-900 rounded-xl relative border-4 border-amber-700 shadow-inner">
-                <div class="absolute -top-[15%] -translate-x-1/2 left-1/2 rounded-full overflow-hidden">
-                    <img src="assets/media/Rectangle 174 (2).png" alt="">
+                <div class="absolute -top-[20%] flex justify-center overflow-hidden w-full">
+                    <img class="rounded-full" src="assets/media/Rectangle 174 (2).png" alt="">
                 </div>
                 <div class="text-center p-5 mt-12 flex flex-col gap-6">
                     <h3 class="font-bold text-3xl">Drinks</h3>
@@ -129,12 +130,12 @@
             </div>
         </section>
 
-        <section class="h-screen flex flex-row justify-center items-center w-full mx-auto my-14 text-white">
-            <div class="w-1/3 h-full">
+        <section class="h-screen flex flex-col md:flex-row justify-center items-center w-full mx-auto my-14 text-white">
+            <div class="md:w-1/3 h-full">
                 <img src="assets/media/coffee-1.jpg" alt="" class="w-full h-full object-cover">
             </div>
-            <div class="w-1/3 flex flex-col h-full bg-orange-300 justify-center text-center">
-                <div class="flex flex-col gap-6 py-6 px-20">
+            <div class="md:w-1/3 flex flex-col h-full bg-orange-300 justify-center text-center">
+                <div class="flex flex-col gap-6 py-6 px-6 md:px-20">
                     <h3 class="font-bold text-xl">
                         Lorem Ipsum
                     </h3>
@@ -144,12 +145,12 @@
                     <a href="#">More +</a>
                 </div>
             </div>
-            <div class="w-1/3 h-full">
+            <div class="md:w-1/3 h-full">
                 <img src="assets/media/coffee-2.jpg" alt="" class="w-full h-full object-cover">
             </div>
         </section>
 
-        <section class="h-96 flex flex-row justify-center items-center gap-52 text-lime-900">
+        <section class="h-96 flex flex-row justify-center items-center gap-12 md:gap-52 text-lime-900">
             <div class="flex flex-col items-center text-center gap-6">
                 <a href="#" class="flex w-16">
                     <svg width="100%" height="100%" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,5 +204,7 @@
             Telefone, Endereço, E-mail, site
         </div>
     </footer>
+
+    <script src="src/app.js"></script>
 </body>
 </html>
