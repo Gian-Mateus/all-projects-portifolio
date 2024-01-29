@@ -5,36 +5,36 @@ document.querySelectorAll('[data-toggle]').forEach(function(e) {
         var target = document.getElementById(targetID);
     
         if (targetID === 'menuNav') {
-        var blur = document.getElementById('outCollapse');
+            var blur = document.getElementById('outCollapse');
 
-        if (!blur) {
-            blur = document.createElement('div');
-            blur.id = "outCollapse";
-            blur.classList.add("z-10", "fixed", "top-0", "right-0", "w-full", "h-screen", "backdrop-blur-sm", "backdrop-brightness-50");
-            document.body.appendChild(blur);
-        }
-
-        function handlerNav() {
-            if (target.classList.contains('hidden')) {
-            target.classList.remove('hidden', 'md:flex');
-            target.classList.add('flex', 'animate-scale-r-to-l');
-            } else {
-            target.classList.remove('animate-scale-r-to-l');
-            target.classList.add('animate-scale-l-to-r', 'md:flex');
-            setTimeout(() => {
-                target.classList.add('hidden');
-            }, 300);
+            if (!blur) {
+                blur = document.createElement('div');
+                blur.id = "outCollapse";
+                blur.classList.add("z-10", "fixed", "top-0", "right-0", "w-full", "h-screen", "backdrop-blur-sm", "backdrop-brightness-50");
+                document.body.appendChild(blur);
             }
-        }
-        handlerNav();
 
-        blur.addEventListener('click', function() {
-            blur.remove();
+            function handlerNav() {
+                if (target.classList.contains('hidden')) {
+                    target.classList.remove('hidden', 'md:flex');
+                    target.classList.add('flex', 'animate-scale-r-to-l');
+                    } else {
+                    target.classList.remove('animate-scale-r-to-l');
+                    target.classList.add('animate-scale-l-to-r', 'md:flex');
+                    setTimeout(() => {
+                        target.classList.add('hidden');
+                    }, 300);
+                }
+            }
             handlerNav();
-        });
+
+            blur.addEventListener('click', function() {
+                blur.remove();
+                handlerNav();
+            });
 
         } else {
-        handlerNav();
+            handlerNav();
         }
     });
 });
